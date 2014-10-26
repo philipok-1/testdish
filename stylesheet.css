@@ -1,0 +1,35 @@
+
+@font-face{font-family:'Original Surfer';font-style:normal;font-weight:400;src:local('Original Surfer'),local('OriginalSurfer-Regular'),url(http://fonts.gstatic.com/s/originalsurfer/v5/gdHw6HpSIN4D6Xt7pi1-qLvSN6Au6P888YiYK1JsL0Q.woff) format('woff');}
+
+html {font-family: "Original Surfer", cursive; font-size: 20px;}
+
+body {background-color: gray;height: 100%; width: 100%;overflow: hidden}
+
+#introscreen {position: fixed; background-image:url("satguy.png");background-size:contain; background-repeat: no-repeat;}
+
+#gamescreen {position: fixed; padding: 5px; visibility:hidden; background-image:url("160788863.png");background-size:contain; background-repeat: no-repeat;}
+
+#endscreen {position: fixed; top: 250px; background-image:url("satguy.png");background-size:contain; background-repeat: no-repeat;visibility:hidden}
+
+#log {position: fixed; top:30px; right:50px}
+
+#timertitle {position: fixed; top:80px; right: 45px; font-size:40px; color:white; visibility: hidden}
+
+#timer {position: fixed; top:160px; right: 45px; font-size:40px; color:white; visibility: hidden}
+
+#scoretitle {position: fixed; top:250px; right: 45px; font-size:40px; color:white; visibility: hidden}
+
+#score {position: fixed; top:350px; right: 45px; font-size:50px; color:white; visibility: hidden}
+
+
+#start {position: fixed; top: 50%; right:10%; font-family: "Original Surfer"; font-size: 40px; background-color: green; color: white;visibility:hidden}
+
+
+#title {position: fixed;width: 300px; top: 2%; right: 40%; color: white;font-size:80px}
+
+#random {position: fixed;top: 200px; right: 45px; color: white;font-size:30px; visibility:hidden}
+
+#gameover  {position: fixed;top: 20%; right: 50px; width: 575px; height: 399px;text-align: center; color: black;font-size:30px; visibility:hidden;  }
+
+
+#bubble  {position: fixed;top: 50px; right: 50px; width: 550px; height: 350px; visibility:hidden;  }

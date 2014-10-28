@@ -8,7 +8,7 @@ function checkUpdate(){
 
 if (window.navigator.standalone){
 alert("web app")
-loadIntro()}
+}
 /*applicationCache.update()	
 var appCache=window.applicationCache
 var message=""
@@ -23,7 +23,7 @@ while (appCache!=1 or appCache!=0){
 loadIntro();	
 }*/
 
-else {alert ("safari"); loadIntro()}
+else {alert ("safari");}
 }
 
 function loadIntro(){

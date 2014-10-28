@@ -6,7 +6,8 @@
 
 function loadIntro(){
 
-checkUpdate();
+var appCache = window.applicationCache;
+alert (appCache.status)
 
 switchScreen("intro", "end")
 switchScreen("intro", "game")

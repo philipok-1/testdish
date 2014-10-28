@@ -6,6 +6,8 @@
 
 function loadIntro(){
 
+checkUpdate();
+
 switchScreen("intro", "end")
 switchScreen("intro", "game")
 

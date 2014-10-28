@@ -4,10 +4,25 @@
 		document.getElementById('audiotag1').play();
 	}
 
-function loadIntro(){
+function checkUpdate(){
 
-var appCache = window.applicationCache;
-alert (appCache.status)
+applicationCache.update()	
+var appCache=window.applicationCache
+var message=""
+
+while (appCache!=1){
+	var appCache=window.applicationCache
+	if (appCache==2){alert("Checking for updates...")}
+	else if (appCache==3)(alert("Downloading update"))
+	else {message=alert("No cache")}
+}
+	
+	
+}
+
+
+
+function loadIntro(){
 
 switchScreen("intro", "end")
 switchScreen("intro", "game")

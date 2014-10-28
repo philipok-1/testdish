@@ -220,8 +220,12 @@ newElements[j].style.visibility="hidden";}
 
 function checkUpdate(){
 
+alert("test1");
+
 // Check if a new cache is available on page load.
 window.addEventListener('load', function(e) {
+
+alert("test2");
 
 var appCache = window.applicationCache;
 

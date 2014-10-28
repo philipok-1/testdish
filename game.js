@@ -236,6 +236,7 @@ appCache.update();
       }
     } else {
       // Manifest didn't changed. Nothing new to server.
+alert("no update");
     }
   }, false);
 

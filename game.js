@@ -14,7 +14,7 @@ while (appCache!=1){
 	var appCache=window.applicationCache
 	if (appCache==2){alert("Checking for updates...")}
 	else if (appCache==3)(alert("Downloading update"))
-	else {message=alert("No cache")}
+	else {alert("No cache")}
 }
 	
 loadIntro();	

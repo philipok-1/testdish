@@ -17,7 +17,7 @@ while (appCache!=1){
 	else {message=alert("No cache")}
 }
 	
-	
+loadIntro();	
 }
 
 

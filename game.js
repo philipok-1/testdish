@@ -217,3 +217,27 @@ var newElements=document.getElementsByClassName(off);
 for (var j=0; j<newElements.length; j++){
 newElements[j].style.visibility="hidden";}
 }
+
+function checkUpdate(){
+
+// Check if a new cache is available on page load.
+window.addEventListener('load', function(e) {
+
+var appCache = window.applicationCache;
+
+appCache.update(); 
+
+  appCache.addEventListener('updateready', function(e) {
+    if (appCache.status == appCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      if (confirm('An update is available. Download?')) {
+       window.swapCache();
+        window.location.reload();
+      }
+    } else {
+      // Manifest didn't changed. Nothing new to server.
+    }
+  }, false);
+
+}, false);}
+

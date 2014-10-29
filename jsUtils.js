@@ -1,3 +1,5 @@
+//Application cache update function
+
 function checkUpdate(){
 
 if (window.navigator.standalone){

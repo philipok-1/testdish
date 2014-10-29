@@ -28,7 +28,8 @@ newGame()
 
   var el = document.getElementById('gamescreen');
   el.addEventListener("touchstart", handleStart, false);
-
+  el.addEventListener("onclick", handleStart, false);
+  
 function handleStart(evt) {
   evt.preventDefault();
   

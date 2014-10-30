@@ -1,23 +1,21 @@
 
 function checkUpdate(){
 
-window.applicationCache.addEventListener('updateready', function(e) {
+window.applicationCache.addEventListener('updateready', onUpdateReady, false);}
 
-    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-      // Browser downloaded a new app cache.
-      if (confirm('A new version of this site is available. Load it?')) {
-        window.applicationCache.swapCache();
-window.location.reload();}
-else 
-{loadIntro()};
-else {loadIntro()};},false );}
-
+ 
 
 function onUpdateReady(){
 	
-	alert("found update")
-	
-	window.applicationCache.swapCache()
-	window.location.reload()
-		
-	}
+ if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      
+      if (confirm('A new version of this site is available. Load it?')) {
+        window.applicationCache.swapCache();
+window.location.reload()}
+else {loadIntro()};}
+
+else {loadIntro()}
+
+};
+
+

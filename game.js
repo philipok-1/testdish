@@ -8,6 +8,8 @@
 
 function loadIntro(){
 
+window.applicationCache.addEventListener('updateready', onUpdateReady);
+
 switchScreen("intro", "end")
 switchScreen("intro", "game")
 

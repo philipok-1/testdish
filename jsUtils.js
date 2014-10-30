@@ -10,7 +10,7 @@ window.applicationCache.addEventListener('updateready', function(e) {
 window.location.reload();}
 else 
 {loadIntro()};
-else {loadIntro()};}, );}
+else {loadIntro()};},false );}
 
 
 function onUpdateReady(){

@@ -21,6 +21,8 @@ canvas = document.getElementById("introscreen");
 canvas.width  = window.innerWidth/2;
 canvas.height = window.innerHeight/2;}
 
+checkUpdate("update")
+
 function startUp(){
 
 

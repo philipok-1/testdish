@@ -3,6 +3,7 @@
 function checkUpdate(updatediv){
 
 window.applicationCache.update()	
+var appCache=window.applicationCache
 
 if (appCache.status==4){
 	

@@ -2,10 +2,10 @@
 
 function checkUpdate(updatediv){
 
-alert("checking")
-
 window.applicationCache.update()	
 var appCache=window.applicationCache
+
+alert (appCache.status)
 
 if (appCache.status==4){
 	

@@ -24,6 +24,7 @@ body {background-color: gray;height: 100%; width: 100%;overflow: hidden}
 
 #start {position: fixed; top: 50%; right:10%; font-family: "Original Surfer"; font-size: 40px; background-color: green; color: white;visibility:hidden}
 
+#update {position: fixed; top: 60%; right:10%; font-family: "Original Surfer"; font-size: 40px; background-color: purple; color: white;visibility:hidden}
 
 #title {position: fixed;width: 300px; top: 2%; right: 40%; color: white;font-size:80px}
 

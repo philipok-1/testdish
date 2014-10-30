@@ -2,6 +2,8 @@
 
 function checkUpdate(updatediv){
 
+alert("checking")
+
 window.applicationCache.update()	
 var appCache=window.applicationCache
 

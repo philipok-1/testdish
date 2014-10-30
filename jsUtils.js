@@ -10,7 +10,7 @@ window.location.reload();
       }
     } else {
       loadIntro()
-    };}
+   };}, false);}
 
 
 function onUpdateReady(){

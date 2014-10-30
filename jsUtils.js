@@ -10,7 +10,7 @@ while (checked==false){
 
 	document.getElementById(updatediv).style="visible"
 	document.getElementById(updatediv).innerHTML=appCache.status
-	if (appCache.status==4){break}
+	if (appCache.status==4){checked=true}
 };
 
 alert ("finished");

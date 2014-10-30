@@ -6,10 +6,11 @@ window.applicationCache.update()
 
 if (appCache.status==4){
 	
-	document.getElementById(updatediv).style=("visible").innerHTML=("Update available!")
+	document.getElementById(updatediv).innerHTML="Update available!"
+	document.getElementById(updatediv).style="visible"
 	
 }
-
+else {alert ("no update")}
 }
 
 function updateCache(){

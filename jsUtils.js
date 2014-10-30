@@ -5,15 +5,15 @@ function checkUpdate(updatediv){
 window.applicationCache.update()	
 var appCache=window.applicationCache
 
-while (appCache.status!=1){
+while (appCache.status!="1"){
 
 	document.getElementById(updatediv).style="visible"
 	document.getElementById(updatediv).innerHTML=appCache.status
 	
-}
+};
 
-alert ("finished")
-}
+alert ("finished");
+};
 
 function updateCache(){
 	

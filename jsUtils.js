@@ -7,7 +7,7 @@ var appCache=window.applicationCache
 var checked=false
 
 while (checked==false){
-alert (checked)
+
 	document.getElementById(updatediv).style="visible"
 	document.getElementById(updatediv).innerHTML=appCache.status
 	if (appCache.status==4){checked=true}

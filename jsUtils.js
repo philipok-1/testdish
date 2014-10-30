@@ -1,23 +1,21 @@
 //Application cache update function
 
-function checkUpdate(){
+function checkUpdate(updatediv){
 
-if (window.navigator.standalone){
-alert("web app")
-}
-/*applicationCache.update()	
-var appCache=window.applicationCache
-var message=""
+window.applicationCache.update()	
 
-while (appCache!=1 or appCache!=0){
-	var appCache=window.applicationCache
-	if (appCache==2){alert("Checking for updates...")}
-	else if (appCache==3)(alert("Downloading update"))
-	}
-}
+if (appCache.status==4){
 	
-loadIntro();	
-}*/
+	document.getElementById(updatediv).innerHTML=("Update available!")
+	
+}
 
-else {alert ("safari");}
+}
+
+function updateCache(){
+	
+	if (window.applicationCache==4){window.applicationCache.swapCache()
+		window.location.reload()
+		
+	}
 }

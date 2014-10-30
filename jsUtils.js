@@ -4,12 +4,13 @@ function checkUpdate(updatediv){
 
 window.applicationCache.update()	
 var appCache=window.applicationCache
+var checked=false
 
-while (appCache.status!="1"){
+while (checked==false){
 
 	document.getElementById(updatediv).style="visible"
 	document.getElementById(updatediv).innerHTML=appCache.status
-	
+	if (appCache.status==4){break}
 };
 
 alert ("finished");

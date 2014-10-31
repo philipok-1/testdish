@@ -1,6 +1,6 @@
 
 function checkUpdate(){
-
+alert("checkUpdate");
 window.applicationCache.addEventListener('updateready', onUpdateReady, false);}
 
  
